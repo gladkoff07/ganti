@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- header-->
+    <header class="header section">
+      <div class="header__top">
+        <div class="container row row--between row--align-center">
+          <!-- select region-->
+          <div class="region header__region">
+            <div class="region__text">Ваш регион:</div><a class="region__change" href="#"> <span class="region__change-name">Санкт-Петербург</span><span class="region__change-icon">
+                <svg class="icon icon-arrow-change-city">
+                  <use xlink:href="svg/symbols.svg#icon-arrow-change-city"></use>
+                </svg></span></a>
+          </div>
+          <!-- menu-->
+          <ul class="header-menu header__menu">
+            <li class="header-menu__item"><a class="header-menu__link" href="#">О сервисе</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Вопрос-ответ</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Поддержка</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container row row--align-center">
+          <!-- logo-->
+          <div class="logo header__logo"><span class="logo__img"><img src="img/img-logo.svg" alt=""/></span><span class="logo__text">Запчасти для сельскохозяйственной и строительной техники</span></div>
+          <!-- catalog button--><a class="link-button link-button--icon link-button--color-orange header__link-catalog" href="#"><span class="link-button__text">Каталог</span><span class="link-button__icon">
+              <svg class="icon icon-arrow-button-catalog">
+                <use xlink:href="svg/symbols.svg#icon-arrow-button-catalog"></use>
+              </svg></span></a>
+          <!-- search-->
+          <div class="header__search">
+            <form class="form-search" action="#">
+              <input class="form-search__input" type="search" name="search" placeholder="Поиск по товару или категории"/>
+              <input class="form-search__submit" type="submit" value=""/>
+            </form>
+          </div>
+          <!-- link supplier--><a class="link-button link-button--color-blue header__link-supplier" href="#">Стать поставщиком</a>
+          <!-- link actions-->
+          <div class="header-actions header__actions">
+            <!-- favorite--><a class="header-actions__item" href="#"><span class="header-actions__item-icon">
+                <svg class="icon icon-favorite">
+                  <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                </svg></span><span class="header-actions__item-value">4</span></a>
+            <!-- basket--><a class="header-actions__item" href="#"><span class="header-actions__item-icon">
+                <svg class="icon icon-basket">
+                  <use xlink:href="svg/symbols.svg#icon-basket"></use>
+                </svg></span><span class="header-actions__item-value">2</span></a>
+            <!-- authorization--><a class="header-actions__item" href="#"><span class="header-actions__item-icon">
+                <svg class="icon icon-authorization">
+                  <use xlink:href="svg/symbols.svg#icon-authorization"></use>
+                </svg></span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- home intro-->
+    <section class="home-intro">
+      <div class="container">
+        <div class="home-intro__box">
+          <div class="home-intro__box-item">
+            <h1 class="page-header">Сервис по поиску запчастей для карьерной, дорожной, строительной и сельскохозяйственной техники </h1>
+            <div class="home-intro-description home-intro__description">Обеспечиваем комплексные поставки широкого ассортимента продукции в различные регионы РФ и СНГ</div>
+            <!-- link-->
+            <div class="home-intro__link"><a class="link-button link-button--color-orange" href="#">Перейти в каталог</a><a class="link-button link-button--color-blue" href="#">Стать поставщиком</a></div>
+          </div>
+          <div class="home-intro__box-item home-intro__box-item--manufacturers">
+            <!-- list manufacturers-->
+            <ul class="list-manufacturers">
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-claas.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-lemken.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-fendt.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-john-deere.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-krone.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-rostselmash.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-buhler.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-amazone.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-same-deutz-fahr.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-new-holland.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-kuhn.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-belarus.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-kverneland.webp" alt=""/></li>
+              <li class="list-manufacturers__item"><img src="img/img-manufacturer-cummins.webp" alt=""/></li>
+            </ul>
+          </div>
+        </div>
+        <!---->
+        <div class="home-intro__search">
+          <div class="intro-search"><a class="intro-search__item intro-search__item--search-cheaper" href="#"><img src="img/img-intro-search-cheaper.webp" alt=""/><span class="intro-search__item-text">Найдем любую запчасть в Китае без посредников!</span><span class="intro-search__item-name">Дешевле чем у дилера!</span></a><a class="intro-search__item intro-search__item--search-photo" href="#"><img src="img/img-intro-search-photo.webp" alt=""/><span class="intro-search__item-name">Поиск запчасти <br/> по фотографии</span></a></div>
+        </div>
+        <!-- list products category-->
+        <div class="home-intro__category">
+          <ul class="list-products-category">
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Вкладыши</span><span class="list-products-category__img"><img src="img/img-products-category-inserts.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Головки блока цилиндров</span><span class="list-products-category__img"><img src="img/img-products-category-cylinder-heads.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Грм</span><span class="list-products-category__img"><img src="img/img-products-category-grm.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Крепеж</span><span class="list-products-category__img"><img src="img/img-products-category-fasteners.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Насосы</span><span class="list-products-category__img"><img src="img/img-products-category-pumps.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Прокладки, сальники, уплотнения</span><span class="list-products-category__img"><img src="img/img-products-category-gaskets-seals.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Распределительные валы</span><span class="list-products-category__img"><img src="img/img-products-category-camshafts.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Ремни, ролики, натяжители</span><span class="list-products-category__img"><img src="img/img-products-category-belts-rollers.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Топливное оборудование</span><span class="list-products-category__img"><img src="img/img-products-category-fuel-equipment.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Цилиндро-поршневая группа</span><span class="list-products-category__img"><img src="img/img-products-category-cylinder-piston.webp" alt=""/></span></a></li>
+            <li class="list-products-category__item"><a class="list-products-category__link" href="#"><span class="list-products-category__name">Электрические компоненты</span><span class="list-products-category__img"><img src="img/img-products-category-elctrical-components.webp" alt=""/></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- new products-->
+    <section class="new-products">
+      <div class="container">
+        <h2 class="section-header">Новые товары</h2>
+        <!-- slider new-products-->
+        <div class="new-products__slider">
+          <div class="slider-new-products swiper js-slider-new-products">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-1.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Защита катка 13926755</a>
+                    <div class="slider-new-products__price">42 164 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-2.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Звено гусеничной цепи 14040533</a>
+                    <div class="slider-new-products__price">7 166₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-3.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Вал вилок включения сцепления МТЗ-82, МАЗ-4370</a>
+                    <div class="slider-new-products__price">508₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-4.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Вал МТЗ-1221 сцепления БЗТДиА</a>
+                    <div class="slider-new-products__price">332 294₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-5.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Вилка сцепления МТЗ-1221 отводки ОАО МТЗ</a>
+                    <div class="slider-new-products__price">6 494₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-6.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Гидроусилитель сцепления МТЗ-1222, 1523 (ан. 80-1602510)</a>
+                    <div class="slider-new-products__price">8 947₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-7.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Диск сцепления МТЗ-1221 опорный БЗТДиА</a>
+                    <div class="slider-new-products__price">24 373₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-8.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Корзина сцепления МТЗ-80 с/о до 94г. БЗТДиА</a>
+                    <div class="slider-new-products__price">16 700₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-9.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Муфта сцепления -3110, -3302 дв.402,405,406 (FENOX)</a>
+                    <div class="slider-new-products__price">1 357₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-10.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Рычаг корзины сцепления МТЗ н/о усиленный БЗТДиА</a>
+                    <div class="slider-new-products__price">620₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-7.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Диск сцепления МТЗ-1221 опорный БЗТДиА</a>
+                    <div class="slider-new-products__price">24 373₽</div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-new-products__item">
+                  <div class="slider-new-products__frame">
+                    <div class="favorite-product slider-new-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                        <svg class="icon icon-favorite">
+                          <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                        </svg></span>
+                    </div><img src="img/img-slider-products-8.webp" alt=""/>
+                  </div>
+                  <div class="slider-new-products__content">
+                    <div class="slider-new-products__category">Cummins</div><a class="slider-new-products__name" href="#">Корзина сцепления МТЗ-80 с/о до 94г. БЗТДиА</a>
+                    <div class="slider-new-products__price">16 700₽</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <svg class="icon icon-slider-prev">
+              <use xlink:href="svg/symbols.svg#icon-slider-prev"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg class="icon icon-slider-next">
+              <use xlink:href="svg/symbols.svg#icon-slider-next"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- faq-->
+    <section class="faq">
+      <div class="container">
+        <div class="faq__inner">
+          <h2 class="section-header section-header--big section-header--white">Часто задаваемые вопросы</h2>
+          <!-- list faq-->
+          <div class="list-faq faq__list">
+            <div class="list-faq__item">
+              <div class="list-faq__head">
+                <div class="list-faq__name">Как разместить объявление на сайте?</div>
+                <div class="list-faq__change js-faq-change">
+                  <svg class="icon icon-faq-change">
+                    <use xlink:href="svg/symbols.svg#icon-faq-change"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-faq__body">
+                <p>Для быстрого и качественного поиска нужных товаров, мы создали целую систему фильтров, которые точно помогут найти именно то, что вы искали.</p>
+                <p>Попадая на главную страницу магазина, вы сразу можете выбрать необходимую категорию товаров. Вам незачем просматривать десятки неактуальных для вас объявлений. После фильтрации по 10+ параметрам вы переходите на сформированную под ваши запросы страницу — товары на ней наиболее соответствуют вашим потребностям. Фильтры помогают быстрее найти нужный товар и в какой-то мере заменяют продавца-консультанта. Мы следим за тем, чтобы в объявлениях была вся необходимая информация: характеристики, фото, цена и другое.</p>
+                <p>Протестируйте наш удобный поиск с актуальным набором фильтров. Мы гарантируем – ваша покупка произойдет быстрее.</p>
+              </div>
+            </div>
+            <div class="list-faq__item">
+              <div class="list-faq__head">
+                <div class="list-faq__name">Как быстро находить нужную продукцию в каталоге?</div>
+                <div class="list-faq__change js-faq-change">
+                  <svg class="icon icon-faq-change">
+                    <use xlink:href="svg/symbols.svg#icon-faq-change"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-faq__body">
+                <p>Для быстрого и качественного поиска нужных товаров, мы создали целую систему фильтров, которые точно помогут найти именно то, что вы искали.</p>
+                <p>Попадая на главную страницу магазина, вы сразу можете выбрать необходимую категорию товаров. Вам незачем просматривать десятки неактуальных для вас объявлений. После фильтрации по 10+ параметрам вы переходите на сформированную под ваши запросы страницу — товары на ней наиболее соответствуют вашим потребностям. Фильтры помогают быстрее найти нужный товар и в какой-то мере заменяют продавца-консультанта. Мы следим за тем, чтобы в объявлениях была вся необходимая информация: характеристики, фото, цена и другое.</p>
+                <p>Протестируйте наш удобный поиск с актуальным набором фильтров. Мы гарантируем – ваша покупка произойдет быстрее.</p>
+              </div>
+            </div>
+            <div class="list-faq__item">
+              <div class="list-faq__head">
+                <div class="list-faq__name">В чем основные отличия ganti.ru от других сервисов?</div>
+                <div class="list-faq__change js-faq-change">
+                  <svg class="icon icon-faq-change">
+                    <use xlink:href="svg/symbols.svg#icon-faq-change"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-faq__body">
+                <p>Для быстрого и качественного поиска нужных товаров, мы создали целую систему фильтров, которые точно помогут найти именно то, что вы искали.</p>
+                <p>Попадая на главную страницу магазина, вы сразу можете выбрать необходимую категорию товаров. Вам незачем просматривать десятки неактуальных для вас объявлений. После фильтрации по 10+ параметрам вы переходите на сформированную под ваши запросы страницу — товары на ней наиболее соответствуют вашим потребностям. Фильтры помогают быстрее найти нужный товар и в какой-то мере заменяют продавца-консультанта. Мы следим за тем, чтобы в объявлениях была вся необходимая информация: характеристики, фото, цена и другое.</p>
+                <p>Протестируйте наш удобный поиск с актуальным набором фильтров. Мы гарантируем – ваша покупка произойдет быстрее.</p>
+              </div>
+            </div>
+            <div class="list-faq__item">
+              <div class="list-faq__head">
+                <div class="list-faq__name">Будут ли растаможены запчасти, которые я получу?</div>
+                <div class="list-faq__change js-faq-change">
+                  <svg class="icon icon-faq-change">
+                    <use xlink:href="svg/symbols.svg#icon-faq-change"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="list-faq__body">
+                <p>Для быстрого и качественного поиска нужных товаров, мы создали целую систему фильтров, которые точно помогут найти именно то, что вы искали.</p>
+                <p>Попадая на главную страницу магазина, вы сразу можете выбрать необходимую категорию товаров. Вам незачем просматривать десятки неактуальных для вас объявлений. После фильтрации по 10+ параметрам вы переходите на сформированную под ваши запросы страницу — товары на ней наиболее соответствуют вашим потребностям. Фильтры помогают быстрее найти нужный товар и в какой-то мере заменяют продавца-консультанта. Мы следим за тем, чтобы в объявлениях была вся необходимая информация: характеристики, фото, цена и другое.</p>
+                <p>Протестируйте наш удобный поиск с актуальным набором фильтров. Мы гарантируем – ваша покупка произойдет быстрее.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- -->
+        <div class="faq__ask-question">
+          <div class="ask-question">
+            <div class="ask-question__header">Остались вопросы?</div>
+            <div class="ask-question__appeal">Напишите нам и мы свяжемся с Вами в ближайшее время или позвоните по номеру +7 (495) 085-33-73</div><a class="link-button link-button--color-orange ask-question__button" href="#">Задать вопрос</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer-->
+    <footer class="footer section">
+      <div class="container row">
+        <div class="footer__column footer__column--data">
+          <!-- logo-->
+          <div class="logo logo--footer footer__logo"><span class="logo__img"><img src="img/img-logo-footer.svg" alt=""/></span><span class="logo__text">Запчасти для сельскохозяйственной и строительной техники</span></div>
+          <!-- link supplier--><a class="link-button link-button--color-blue footer__link-supplier" href="#">Стать поставщиком</a>
+          <!-- address-->
+          <address class="address footer__address">
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-place">
+                  <use xlink:href="svg/symbols.svg#icon-address-place"></use>
+                </svg>
+              </div>
+              <div class="address__content">Москва, ул. Рябиновая, д. 32, этаж 1, пом. 2</div>
+            </div>
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-phone">
+                  <use xlink:href="svg/symbols.svg#icon-address-phone"></use>
+                </svg>
+              </div>
+              <div class="address__content">+7 (495) 085-33-73</div>
+            </div>
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-email">
+                  <use xlink:href="svg/symbols.svg#icon-address-email"></use>
+                </svg>
+              </div>
+              <div class="address__content">info@ganti.ru</div>
+            </div>
+          </address>
+        </div>
+        <div class="footer__column footer__column--category">
+          <div class="footer__column-header">Категории</div>
+          <ul class="footer-menu footer-menu--column">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вкладыши</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Головки блока цилиндров</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">ГРМ</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Крепеж</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Насосы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Прокладки, сальники, уплотнения</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Распределительные валы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Ремни, ролики, натяжители</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Система охлаждения</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Топливное оборудование</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Ходовая часть</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Цилиндро-поршневая группа</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Электрические компоненты</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--service">
+          <div class="footer__column-header">Сервис</div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Личный кабинет</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Партнеры</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--info">
+          <div class="footer__column-header">Информация</div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка и оплата</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Реквизиты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Связаться с админитсратором сайта</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts-->
+    <script src="js/vendor.js" defer></script>
+    <script src="js/common.js" defer></script>
+  </body>
+</html>

@@ -17,7 +17,7 @@
         <div class="container row row--between row--align-center">
           <!-- select region-->
           <div class="region header__region">
-            <div class="region__text">Ваш регион:</div><a class="region__change" href="#"> <span class="region__change-name">Санкт-Петербург</span><span class="region__change-icon">
+            <div class="region__text">Ваш регион:</div><a class="region__change" href="#modal-region" data-fancybox="data-fancybox"> <span class="region__change-name">Санкт-Петербург</span><span class="region__change-icon">
                 <svg class="icon icon-arrow-change-city">
                   <use xlink:href="svg/symbols.svg#icon-arrow-change-city"></use>
                 </svg></span></a>
@@ -204,6 +204,100 @@
         </div>
       </div>
     </footer>
+    <!-- modal-region-->
+    <div class="modal modal--region" id="modal-region">
+      <div class="modal__header">Выберите ваш регион</div>
+      <div class="modal__body">
+        <ul class="list-regions">
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Вся Россия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Москва</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Санкт-Петербург</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Адыгея</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Алтай</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Алтайский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Амурская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Архангельская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Астраханская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Башкортостан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Белгородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Брянская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Бурятия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Владимирская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Волгоградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Вологодская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Воронежская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Дагестан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Еврейская AO</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Забайкальский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ивановская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Ингушетия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Иркутская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кабардино-Балкарская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Калининградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Калмыкия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Калужская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Камчатский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Карачаево-Черкесская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Карелия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кемеровская обл - Кузбасс</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кировская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Коми</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Костромская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Краснодарский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Красноярский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Крым</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Курганская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Курская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ленинградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Липецкая обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Магаданская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Марий Эл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Мордовия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Московская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Мурманская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ненецкий АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Нижегородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Новгородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Новосибирская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Омская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Оренбургская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Орловская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Пензенская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Пермский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Приморский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Псковская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ростовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Рязанская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Самарская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Саратовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Саха /Якутия/</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Сахалинская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Свердловская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Севастополь</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Северная Осетия - Алания</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Смоленская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ставропольский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тамбовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Татарстан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тверская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Томская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тульская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Тыва</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тюменская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Удмуртская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ульяновская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Хабаровский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Хакасия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ханты-Мансийский AO - Югра</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Челябинская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чеченская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чувашская респ - Чувашия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чукотский АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ямало-Ненецкий АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ярославская обл</a></li>
+        </ul>
+      </div>
+    </div>
     <!-- scripts-->
     <script src="js/vendor.js" defer></script>
     <script src="js/common.js" defer></script>

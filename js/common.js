@@ -21,4 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.toggle('link-button--active');
     this.nextElementSibling.classList.toggle('header__link-catalog-box--active');
   });
+
+  // js-mobile-search
+  document.querySelector('.js-mobile-search').addEventListener('click', function () {
+    this.classList.toggle('mobile-search--active');
+  });
 });

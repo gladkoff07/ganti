@@ -13,6 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelector('.js-change-authorization-nav').addEventListener('click', function () {
     this.classList.toggle('link-authorization--active');
     this.querySelector('.link-authorization__box').classList.toggle('link-authorization__box--active');
+
+    // document.querySelector('.header__search').classList.remove('header__search--active');
+    // document.querySelector('.js-mobile-search').classList.remove('mobile-search--active');
+
+    // document.querySelector('.js-change-list-catalog-nav').classList.remove('link-button--active');
+    // document.querySelector('.header__link-catalog-box').classList.remove('header__link-catalog-box--active');
   });
 
   // js-change-list-catalog-nav
@@ -20,10 +26,23 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
     this.classList.toggle('link-button--active');
     this.nextElementSibling.classList.toggle('header__link-catalog-box--active');
+
+    // document.querySelector('.js-change-authorization-nav').classList.remove('link-authorization--active');
+    // document.querySelector('.link-authorization__box').classList.toggle('link-authorization__box--active');
+
+    // document.querySelector('.header__search').classList.remove('header__search--active');
+    // document.querySelector('.js-mobile-search').classList.remove('mobile-search--active');
   });
 
   // js-mobile-search
   document.querySelector('.js-mobile-search').addEventListener('click', function () {
     this.classList.toggle('mobile-search--active');
+    this.closest('.container').querySelector('.header__search').classList.toggle('header__search--active');
+
+    // document.querySelector('.js-change-list-catalog-nav').classList.remove('link-button--active');
+    // document.querySelector('.header__link-catalog-box').classList.remove('header__link-catalog-box--active');
+
+    // document.querySelector('.js-change-authorization-nav').classList.remove('link-authorization--active');
+    // document.querySelector('.link-authorization__box').classList.toggle('link-authorization__box--active');
   });
 });

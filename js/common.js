@@ -1,6 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
+  var _document$querySelect;
   // js-faq-change
   document.querySelectorAll('.js-faq-change').forEach(function (item) {
     item.addEventListener('click', function () {
@@ -38,5 +39,18 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.header__link-catalog-box').classList.remove('header__link-catalog-box--active');
     document.querySelector('.js-change-authorization-nav').classList.remove('link-authorization--active');
     document.querySelector('.link-authorization__box').classList.remove('link-authorization__box--active');
+  });
+
+  // input mask
+  document.querySelectorAll(".js-form-phone").forEach(function (e) {
+    var phoneMask = IMask(e, {
+      mask: "+{7}(000)000-00-00"
+    });
+  });
+
+  // input file
+  (_document$querySelect = document.querySelector(".form__input-file")) === null || _document$querySelect === void 0 || _document$querySelect.addEventListener("change", function () {
+    var fileName = document.querySelector(".form__input-file").files[0].name;
+    document.querySelector(".form__file-text").innerHTML = fileName;
   });
 });

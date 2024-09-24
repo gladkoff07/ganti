@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Регистрация</title><!--[if IE]>
+    <title>Подать объявление</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -109,40 +109,33 @@
         <ul class="breadcrumbs main__breadcrumbs">
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
           </li>
-          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Регистрация</span>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Подать объявление</span>
           </li>
         </ul>
         <!-- block authentication-->
-        <div class="authentication main__authentication">
-          <h1 class="page-header">Регистрация</h1>
-          <div class="authentication__description authentication__description--registration">Создайте новый аккаунт и получите доступ к дополнительному функционалу. Если аккаунт уже есть, то вы можете в него войти на странице <a href="#">Входа.</a></div>
+        <div class="authentication main__authentication main__authentication--advertisement">
+          <h1 class="page-header">Подать объявление</h1>
+          <div class="authentication__description authentication__description--advertisement">Оставьте свои контактные данные - Наш Менеджер свяжется с Вами в течение 1 рабочего дня</div>
           <!-- form-->
-          <form class="form authentication__form authentication__form--registration" action="#">
-            <div class="form__row form__row--between">
-              <input class="form__input form__input--50" type="text" name="email" placeholder="E-mail"/>
-              <input class="form__input form__input--50" type="password" name="password" placeholder="Пароль"/>
-            </div>
-            <div class="form__row form__row--between">
-              <input class="form__input form__input--50 js-form-phone" type="text" name="phone" placeholder="Номер телефона"/>
-              <input class="form__input form__input--50" type="text" name="name" placeholder="Имя"/>
-            </div>
-            <div class="form__row form__row--between">
-              <input class="form__input form__input--50" type="text" name="lastname" placeholder="Фамилия"/>
-              <input class="form__input form__input--50" type="text" name="country" placeholder="Страна"/>
-            </div>
-            <div class="form__row form__row--between">
-              <input class="form__input form__input--50" type="text" name="city" placeholder="Населенный пункт"/>
-            </div>
-            <div class="form__row form__row--between">
-              <input class="form__input form__input--50" type="text" name="organization" placeholder="Организация"/>
-              <input class="form__input form__input--50" type="text" name="ogrn" placeholder="ОГРН, ОГРНИП"/>
-            </div>
-            <div class="form__row form__row--between">
-              <input class="form__input form__input--50" type="text" name="inn" placeholder="ИНН"/>
+          <form class="form authentication__form authentication__form--advertisement" action="#">
+            <input class="form__input" type="text" name="name" placeholder="Название организации"/>
+            <input class="form__input" type="text" name="fio" placeholder="Имя и Фамилия"/>
+            <input class="form__input js-form-phone" type="text" name="phone" placeholder="+7 (___)___-__-__"/>
+            <input class="form__input" type="text" name="email" placeholder="E-mail"/>
+            <div class="form__file">
+              <input class="form__input-file" type="file" name="file"/>
+              <div class="form__file-box">
+                <div class="form__file-icon">
+                  <svg class="icon icon-form-attach">
+                    <use xlink:href="svg/symbols.svg#icon-form-attach"></use>
+                  </svg>
+                </div>
+                <div class="form__file-text">Прикрепить прайс-лист</div>
+              </div>
             </div>
             <div class="form__info">Нажимая кнопку, я даю свое согласие на обработку моих персональных данных в соответствии с законом № 152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия <a href="#">пользовательского соглашения.</a></div>
             <div class="form__action">
-              <input class="form__submit" type="submit" value="Зарегистрироваться"/>
+              <input class="form__submit" type="submit" value="Отправить"/>
             </div>
           </form>
         </div>

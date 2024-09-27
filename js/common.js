@@ -53,4 +53,29 @@ document.addEventListener('DOMContentLoaded', function () {
     var fileName = document.querySelector(".form__input-file").files[0].name;
     document.querySelector(".form__file-text").innerHTML = fileName;
   });
+
+  // clone element 
+  (function () {
+    // Условие для viewport шириной 1023
+    var mediaQuery = window.matchMedia("(max-width: 1023px)");
+    function handleTabletChange(e) {
+      // Проверить, что media query будет true
+      if (e.matches) {
+        var _document$querySelect2;
+        var basketInfo = (_document$querySelect2 = document.querySelector(".block-basket__content")) === null || _document$querySelect2 === void 0 ? void 0 : _document$querySelect2.querySelector('.basket-info');
+        var basketAside = document.querySelector(".block-basket__aside");
+        basketAside.after(basketInfo);
+      } else {
+        var _document$querySelect3, _document$querySelect4;
+        var _basketInfo = (_document$querySelect3 = document.querySelector(".block-basket")) === null || _document$querySelect3 === void 0 ? void 0 : _document$querySelect3.querySelector('.basket-info');
+        var basketList = (_document$querySelect4 = document.querySelector(".block-basket__content")) === null || _document$querySelect4 === void 0 ? void 0 : _document$querySelect4.querySelector('.basket-list');
+        basketList.after(_basketInfo);
+      }
+    }
+    // Слушать события
+    mediaQuery.addListener(handleTabletChange);
+
+    // Начальная проверка
+    handleTabletChange(mediaQuery);
+  })();
 });

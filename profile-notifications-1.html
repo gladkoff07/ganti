@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Уведомления</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- header-->
+    <header class="header section">
+      <div class="header__top">
+        <div class="container row row--between row--align-center">
+          <!-- select region-->
+          <div class="region header__region">
+            <div class="region__text">Ваш регион:</div><a class="region__change" href="#modal-region" data-fancybox="data-fancybox"> <span class="region__change-name">Санкт-Петербург</span><span class="region__change-icon">
+                <svg class="icon icon-arrow-change-city">
+                  <use xlink:href="svg/symbols.svg#icon-arrow-change-city"></use>
+                </svg></span></a>
+          </div>
+          <!-- menu-->
+          <ul class="header-menu header__menu">
+            <li class="header-menu__item"><a class="header-menu__link" href="#">О сервисе</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Вопрос-ответ</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Поддержка</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container row row--align-center">
+          <!-- logo-->
+          <div class="logo header__logo"><span class="logo__img"><img src="img/img-logo.svg" alt=""/></span><span class="logo__text">Запчасти для сельскохозяйственной и строительной техники</span></div>
+          <!-- catalog button-->
+          <div class="header__link-catalog"><a class="link-button link-button--icon link-button--color-orange js-change-list-catalog-nav" href="#"><span class="link-button__text">Каталог</span><span class="link-button__icon">
+                <svg class="icon icon-arrow-button-catalog">
+                  <use xlink:href="svg/symbols.svg#icon-arrow-button-catalog"></use>
+                </svg></span></a>
+            <div class="header__link-catalog-box">
+              <ul class="list-catalog-nav">
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Вкладыши</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Головки блока цилиндров</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">ГРМ</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Крепеж</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Насосы</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Прокладки, сальники, уплотнения</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Распределительные валы</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Ремни, ролики, натяжители</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Система охлаждения</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Топливное оборудование</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Ходовая часть</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Цилиндро-поршневая группа</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Электрические компоненты</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- search-->
+          <div class="header__search">
+            <form class="form-search" action="#">
+              <input class="form-search__input" type="search" name="search" placeholder="Поиск по товару или категории"/>
+              <input class="form-search__submit" type="submit" value=""/>
+            </form>
+          </div>
+          <!-- link supplier--><a class="link-button link-button--color-blue header__link-supplier" href="#">Стать поставщиком</a>
+          <!-- link actions-->
+          <div class="header-actions header__actions">
+            <!-- favorite--><a class="header-actions__item" href="#"><span class="header-actions__item-icon">
+                <svg class="icon icon-favorite">
+                  <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                </svg></span><span class="header-actions__item-value">4</span></a>
+            <!-- basket--><a class="header-actions__item" href="#"><span class="header-actions__item-icon">
+                <svg class="icon icon-basket">
+                  <use xlink:href="svg/symbols.svg#icon-basket"></use>
+                </svg></span><span class="header-actions__item-value">2</span></a>
+            <!-- authorization-->
+            <div class="link-authorization header-actions__item js-change-authorization-nav"><span class="header-actions__item-icon">
+                <svg class="icon icon-authorization">
+                  <use xlink:href="svg/symbols.svg#icon-authorization"></use>
+                </svg></span>
+              <div class="link-authorization__box">
+                <ul class="user-navigation">
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Мои объявления</a></li>
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Профиль</a></li>
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Финансы</a></li>
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Смена пароля</a></li>
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Уведомления</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- mobile button-->
+          <div class="mobile-button header__mobile-button js-mobile-button">
+            <svg class="icon icon-menu-mobile">
+              <use xlink:href="svg/symbols.svg#icon-menu-mobile"></use>
+            </svg>
+          </div>
+          <!-- mobile search-->
+          <div class="mobile-search header__mobile-search js-mobile-search"></div>
+        </div>
+      </div>
+    </header>
+    <!-- main-->
+    <main class="main section">
+      <div class="container">
+        <!-- breadcrumbs-->
+        <ul class="breadcrumbs main__breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Личный кабинет</a>
+          </li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Уведомления</span>
+          </li>
+        </ul>
+        <!-- notification-->
+        <div class="notification notification--error main__notification">
+          <div class="notification__text">Ваши возможности на сайте ограничены. Пожалуйста подтвердите почту, перейдя по ссылке, которую мы вам выслали на ваш email</div>
+          <div class="notification__icon">
+            <svg class="icon icon-close-notification">
+              <use xlink:href="svg/symbols.svg#icon-close-notification"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- profile-->
+        <div class="block-profile main__block-profile main__block-profile--notification">
+          <div class="block-profile__nav">
+            <ul class="profile-nav">
+              <li class="profile-nav__item"><a class="profile-nav__link" href="#">Мои объявление</a>
+              </li>
+              <li class="profile-nav__item"><a class="profile-nav__link" href="#">Профиль</a>
+              </li>
+              <li class="profile-nav__item"><a class="profile-nav__link" href="#">Финансы</a>
+              </li>
+              <li class="profile-nav__item"><a class="profile-nav__link" href="#">Смена пароля</a>
+              </li>
+              <li class="profile-nav__item"><a class="profile-nav__link profile-nav__link--active" href="#">Уведомления</a>
+              </li>
+            </ul>
+          </div>
+          <div class="block-profile__content">
+            <h1 class="page-header">Уведомления</h1>
+            <div class="block-profile__body">
+              <div class="list-notification">
+                <div class="list-notification__item">
+                  <div class="list-notification__text">10.03.2022г в 19.00 часов. Организация встречи с руководством УК ООО "ПАТРИОТ"</div>
+                  <div class="list-notification__date">13.09.2024</div>
+                </div>
+                <div class="list-notification__item">
+                  <div class="list-notification__text">Окончание аварийно-восстановительных работ.</div>
+                  <div class="list-notification__date">24.11.2024</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- wrapper-ask-question-->
+    <div class="wrapper-ask-question">
+      <div class="container">
+        <div class="ask-question">
+          <div class="ask-question__header">Остались вопросы?</div>
+          <div class="ask-question__appeal">Напишите нам и мы свяжемся с Вами в ближайшее время или позвоните по номеру +7 (495) 085-33-73</div><a class="link-button link-button--color-orange ask-question__button" href="#">Задать вопрос</a>
+        </div>
+      </div>
+    </div>
+    <!-- footer-->
+    <footer class="footer section">
+      <div class="container row">
+        <div class="footer__column footer__column--data">
+          <!-- logo-->
+          <div class="logo logo--footer footer__logo"><span class="logo__img"><img src="img/img-logo-footer.svg" alt=""/></span><span class="logo__text">Запчасти для сельскохозяйственной и строительной техники</span></div>
+          <!-- link supplier--><a class="link-button link-button--color-blue footer__link-supplier" href="#">Стать поставщиком</a>
+          <!-- address-->
+          <address class="address footer__address">
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-place">
+                  <use xlink:href="svg/symbols.svg#icon-address-place"></use>
+                </svg>
+              </div>
+              <div class="address__content">Москва, ул. Рябиновая, д. 32, этаж 1, пом. 2</div>
+            </div>
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-phone">
+                  <use xlink:href="svg/symbols.svg#icon-address-phone"></use>
+                </svg>
+              </div>
+              <div class="address__content">+7 (495) 085-33-73</div>
+            </div>
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-email">
+                  <use xlink:href="svg/symbols.svg#icon-address-email"></use>
+                </svg>
+              </div>
+              <div class="address__content">info@ganti.ru</div>
+            </div>
+          </address>
+        </div>
+        <div class="footer__column footer__column--category">
+          <div class="footer__column-header">Категории</div>
+          <ul class="footer-menu footer-menu--column">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вкладыши</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Головки блока цилиндров</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">ГРМ</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Крепеж</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Насосы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Прокладки, сальники, уплотнения</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Распределительные валы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Ремни, ролики, натяжители</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Система охлаждения</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Топливное оборудование</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Ходовая часть</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Цилиндро-поршневая группа</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Электрические компоненты</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--service">
+          <div class="footer__column-header">Сервис</div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Личный кабинет</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Партнеры</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--info">
+          <div class="footer__column-header">Информация</div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка и оплата</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Реквизиты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Связаться с админитсратором сайта</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- modal-region-->
+    <div class="modal modal--region" id="modal-region">
+      <div class="modal__header">Выберите ваш регион</div>
+      <div class="modal__body">
+        <ul class="list-regions">
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Вся Россия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Москва</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Санкт-Петербург</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Адыгея</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Алтай</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Алтайский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Амурская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Архангельская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Астраханская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Башкортостан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Белгородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Брянская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Бурятия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Владимирская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Волгоградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Вологодская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Воронежская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Дагестан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Еврейская AO</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Забайкальский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ивановская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Ингушетия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Иркутская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кабардино-Балкарская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Калининградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Калмыкия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Калужская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Камчатский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Карачаево-Черкесская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Карелия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кемеровская обл - Кузбасс</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кировская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Коми</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Костромская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Краснодарский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Красноярский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Крым</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Курганская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Курская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ленинградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Липецкая обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Магаданская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Марий Эл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Мордовия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Московская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Мурманская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ненецкий АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Нижегородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Новгородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Новосибирская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Омская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Оренбургская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Орловская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Пензенская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Пермский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Приморский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Псковская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ростовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Рязанская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Самарская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Саратовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Саха /Якутия/</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Сахалинская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Свердловская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Севастополь</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Северная Осетия - Алания</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Смоленская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ставропольский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тамбовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Татарстан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тверская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Томская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тульская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Тыва</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тюменская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Удмуртская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ульяновская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Хабаровский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Хакасия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ханты-Мансийский AO - Югра</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Челябинская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чеченская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чувашская респ - Чувашия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чукотский АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ямало-Ненецкий АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ярославская обл</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- scripts-->
+    <script src="js/vendor.js" defer></script>
+    <script src="js/common.js" defer></script>
+  </body>
+</html>

@@ -60,6 +60,10 @@
 			<g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 6.5v.293c0 1.429.486 2.815 1.379 3.93L8 16.5l4.621-5.776A6.292 6.292 0 0 0 14 6.793V6.5a6 6 0 0 0-12 0zm6 2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#8D95AA"></path></g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .5)" d="M0 0h16v16H0z"></path></clipPath></defs>
 		</symbol>
 	
+		<symbol id="icon-close-notification" viewBox="0 0 22 22">
+			<path d="M1 1l20 20M21 1L1 21"></path>
+		</symbol>
+	
 		<symbol id="icon-faq-change" viewBox="0 0 22 13">
 			<path d="M1 1.5l10 10 10-10"></path>
 		</symbol>

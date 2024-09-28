@@ -64,12 +64,12 @@ document.addEventListener('DOMContentLoaded', function () {
         var _document$querySelect2;
         var basketInfo = (_document$querySelect2 = document.querySelector(".block-basket__content")) === null || _document$querySelect2 === void 0 ? void 0 : _document$querySelect2.querySelector('.basket-info');
         var basketAside = document.querySelector(".block-basket__aside");
-        basketAside.after(basketInfo);
+        basketAside === null || basketAside === void 0 || basketAside.after(basketInfo);
       } else {
         var _document$querySelect3, _document$querySelect4;
         var _basketInfo = (_document$querySelect3 = document.querySelector(".block-basket")) === null || _document$querySelect3 === void 0 ? void 0 : _document$querySelect3.querySelector('.basket-info');
         var basketList = (_document$querySelect4 = document.querySelector(".block-basket__content")) === null || _document$querySelect4 === void 0 ? void 0 : _document$querySelect4.querySelector('.basket-list');
-        basketList.after(_basketInfo);
+        basketList === null || basketList === void 0 || basketList.after(_basketInfo);
       }
     }
     // Слушать события
@@ -78,4 +78,57 @@ document.addEventListener('DOMContentLoaded', function () {
     // Начальная проверка
     handleTabletChange(mediaQuery);
   })();
+
+  // clone element 
+  (function () {
+    // Условие для viewport шириной 575
+    var mediaQuery = window.matchMedia("(max-width: 575px)");
+    function handleTabletChange(e) {
+      // Проверить, что media query будет true
+      if (e.matches) {
+        var _document$querySelect5, _document$querySelect6;
+        var headerMenu = (_document$querySelect5 = document.querySelector(".header__top")) === null || _document$querySelect5 === void 0 ? void 0 : _document$querySelect5.querySelector('.header-menu');
+        var menuMobileBody = document.querySelector(".menu-mobile").querySelector('.menu-mobile__body');
+        menuMobileBody === null || menuMobileBody === void 0 || menuMobileBody.append(headerMenu);
+        var headerRegion = (_document$querySelect6 = document.querySelector(".header__top")) === null || _document$querySelect6 === void 0 ? void 0 : _document$querySelect6.querySelector('.region');
+        menuMobileBody === null || menuMobileBody === void 0 || menuMobileBody.append(headerRegion);
+      } else {
+        var _document$querySelect7, _document$querySelect8, _document$querySelect9;
+        var menuMobileBodyNav = ((_document$querySelect7 = document.querySelector(".menu-mobile")) === null || _document$querySelect7 === void 0 ? void 0 : _document$querySelect7.querySelector('.header-menu')) || '';
+        var headerTopContainer = (_document$querySelect8 = document.querySelector(".header__top")) === null || _document$querySelect8 === void 0 ? void 0 : _document$querySelect8.querySelector('.container');
+        headerTopContainer === null || headerTopContainer === void 0 || headerTopContainer.append(menuMobileBodyNav);
+        var menuMobileBodyRegion = ((_document$querySelect9 = document.querySelector(".menu-mobile")) === null || _document$querySelect9 === void 0 ? void 0 : _document$querySelect9.querySelector('.region')) || '';
+        headerTopContainer === null || headerTopContainer === void 0 || headerTopContainer.prepend(menuMobileBodyRegion);
+      }
+    }
+    // Слушать события
+    mediaQuery.addListener(handleTabletChange);
+
+    // Начальная проверка
+    handleTabletChange(mediaQuery);
+  })();
+
+  // menu mobile
+  var buttonMenu = document.querySelector(".js-mobile-button");
+  var blockMenu = document.querySelector(".menu-mobile");
+  // const buttonMenuClose = document.querySelector('.js-menu-close');
+  var blockBody = document.querySelector("body");
+  var openMenu = function openMenu() {
+    buttonMenu.classList.toggle('mobile-button--active');
+    blockMenu.classList.toggle("menu-mobile--active");
+    blockBody.classList.toggle('body-overflow');
+  };
+
+  // const closeMenu = () => {
+  //   blockMenu.classList.remove("menu-mobile--active");
+  //   blockBody.classList.remove('body-overflow');
+  // };
+
+  buttonMenu.addEventListener("click", function () {
+    openMenu();
+  });
+
+  // buttonMenuClose.addEventListener("click", () => {
+  //   closeMenu();
+  // });
 });

@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Уведомления</title><!--[if IE]>
+    <title>Профиль</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -115,48 +115,82 @@
           </li>
           <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Личный кабинет</a>
           </li>
-          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Уведомления</span>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Профиль</span>
           </li>
         </ul>
-        <!-- notification-->
-        <div class="notification notification--error main__notification">
-          <div class="notification__text">Ваши возможности на сайте ограничены. Пожалуйста подтвердите почту, перейдя по ссылке, которую мы вам выслали на ваш email</div>
-          <div class="notification__icon">
-            <svg class="icon icon-close-notification">
-              <use xlink:href="svg/symbols.svg#icon-close-notification"></use>
-            </svg>
-          </div>
-        </div>
         <!-- profile-->
-        <div class="block-profile main__block-profile main__block-profile--notification">
+        <div class="block-profile main__block-profile">
           <div class="block-profile__nav">
             <ul class="profile-nav">
               <li class="profile-nav__item"><a class="profile-nav__link" href="#">Мои объявление</a>
               </li>
-              <li class="profile-nav__item"><a class="profile-nav__link" href="#">Профиль</a>
+              <li class="profile-nav__item"><a class="profile-nav__link profile-nav__link--active" href="#">Профиль</a>
               </li>
               <li class="profile-nav__item"><a class="profile-nav__link" href="#">Финансы</a>
               </li>
               <li class="profile-nav__item"><a class="profile-nav__link" href="#">Смена пароля</a>
               </li>
-              <li class="profile-nav__item"><a class="profile-nav__link profile-nav__link--active" href="#">Уведомления</a>
+              <li class="profile-nav__item"><a class="profile-nav__link" href="#">Уведомления</a>
               </li>
             </ul>
           </div>
           <div class="block-profile__content">
-            <h1 class="page-header">Уведомления</h1>
-            <div class="block-profile__body">
-              <div class="list-notification">
-                <div class="list-notification__item">
-                  <div class="list-notification__text">10.03.2022г в 19.00 часов. Организация встречи с руководством УК ООО "ПАТРИОТ"</div>
-                  <div class="list-notification__date">13.09.2024</div>
+            <h1 class="page-header">Профиль</h1>
+            <div class="profile-link"><span class="profile-link__text">Публичный профиль</span><span class="profile-link__icon">
+                <svg class="icon icon-profile-link">
+                  <use xlink:href="svg/symbols.svg#icon-profile-link"></use>
+                </svg></span></div>
+            <!-- form -->
+            <form class="form block-profile__form" action="#">
+              <div class="form__row form__row--between">
+                <div class="form__item">
+                  <div class="form__item-name">Имя</div>
+                  <input class="form__input" type="text" name="name" placeholder="Имя"/>
                 </div>
-                <div class="list-notification__item">
-                  <div class="list-notification__text">Окончание аварийно-восстановительных работ.</div>
-                  <div class="list-notification__date">24.11.2024</div>
+                <div class="form__item">
+                  <div class="form__item-name">Фамилия</div>
+                  <input class="form__input" type="text" name="fio" placeholder="Имя и Фамилия"/>
                 </div>
               </div>
-            </div>
+              <div class="form__row form__row--between">
+                <div class="form__item">
+                  <div class="form__item-name">Страна</div>
+                  <input class="form__input" type="text" name="country" placeholder="Страна"/>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-name">Населенный пункт</div>
+                  <input class="form__input" type="text" name="city" placeholder="Населенный пункт"/>
+                </div>
+              </div>
+              <div class="form__row form__row--between">
+                <div class="form__item">
+                  <div class="form__item-name">E-mail</div>
+                  <input class="form__input" type="text" name="email" placeholder="E-mail"/>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-name">Телефон</div>
+                  <input class="form__input js-form-phone" type="text" name="phone" placeholder="+7 (___)___-__-__"/>
+                </div>
+              </div>
+              <div class="form__row form__row--between">
+                <div class="form__item">
+                  <div class="form__item-name"></div>
+                  <input class="form__input" type="text" name="organization" placeholder="Название организация"/>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-name"></div>
+                  <input class="form__input" type="text" name="ogrn" placeholder="ОГРН, ОГРНИП"/>
+                </div>
+              </div>
+              <div class="form__row form__row--between">
+                <div class="form__item">
+                  <input class="form__input" type="text" name="inn" placeholder="ИНН"/>
+                </div>
+                <div class="form__item">
+                  <input class="form__input" type="text" name="site" placeholder="Сайт"/>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>

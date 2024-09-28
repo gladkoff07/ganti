@@ -77,7 +77,7 @@
 		</symbol>
 	
 		<symbol id="icon-menu-mobile" viewBox="0 0 24 25">
-			<path d="M3 7h19M3 13h19M3 19h19" stroke="#2F3239" stroke-linecap="round"></path>
+			<path d="M3 7h19M3 13h19M3 19h19"></path>
 		</symbol>
 	
 		<symbol id="icon-slider-next" viewBox="0 0 13 22">

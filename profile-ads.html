@@ -136,7 +136,62 @@
           </div>
           <div class="block-profile__content">
             <h1 class="page-header">Мои объявления</h1>
-            <div class="block-profile__body"></div>
+            <!-- filter-->
+            <div class="list-filter block-profile__filter">
+              <div class="list-filter__item">Опубликованные</div>
+              <div class="list-filter__item list-filter__item--active"><span class="list-filter__text">Черновик</span><span class="list-filter__icon">
+                  <svg class="icon icon-filter-del">
+                    <use xlink:href="svg/symbols.svg#icon-filter-del"></use>
+                  </svg></span></div>
+              <div class="list-filter__item list-filter__item--active"><span class="list-filter__text">На модерации</span><span class="list-filter__icon">
+                  <svg class="icon icon-filter-del">
+                    <use xlink:href="svg/symbols.svg#icon-filter-del"></use>
+                  </svg></span></div>
+              <div class="list-filter__item">Архив</div>
+              <div class="list-filter__item">Продвигаемые</div>
+            </div>
+            <div class="block-profile__table">
+              <table class="table-ads">
+                <thead>
+                  <th class="table-ads__id">ID</th>
+                  <th class="table-ads__photo">Фото</th>
+                  <th class="table-ads__name">Название</th>
+                  <th class="table-ads__status">Статус</th>
+                  <th class="table-ads__price">Цена</th>
+                  <th class="table-ads__availability">Наличие</th>
+                  <th class="table-ads__changes">Изменено</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="table-ads__id">1</td>
+                    <td class="table-ads__photo"><span class="table-ads__img"><img src="img/img-ads-1.webp" alt=""/></span></td>
+                    <td class="table-ads__name" data-name="Название">Вал вилок включения сцепления МТЗ-82, МАЗ-4370</td>
+                    <td class="table-ads__status" data-name="Статус">Опубликовано</td>
+                    <td class="table-ads__price" data-name="Цена">332 294 ₽</td>
+                    <td class="table-ads__availability" data-name="Наличие">Склад: Вся Россия</td>
+                    <td class="table-ads__changes" data-name="Изменено">26 марта 2024, 20:00</td>
+                  </tr>
+                  <tr>
+                    <td class="table-ads__id">2</td>
+                    <td class="table-ads__photo"><span class="table-ads__img"><img src="img/img-ads-2.webp" alt=""/></span></td>
+                    <td class="table-ads__name" data-name="Название">Вилка сцепления МТЗ-1221 отводки ОАО МТЗ</td>
+                    <td class="table-ads__status" data-name="Статус">Черновик</td>
+                    <td class="table-ads__price" data-name="Цена">43 294 ₽</td>
+                    <td class="table-ads__availability" data-name="Наличие">Склад: Вся Россия</td>
+                    <td class="table-ads__changes" data-name="Изменено">26 марта 2024, 20:00</td>
+                  </tr>
+                  <tr>
+                    <td class="table-ads__id">3</td>
+                    <td class="table-ads__photo"><span class="table-ads__img"><img src="img/img-ads-3.webp" alt=""/></span></td>
+                    <td class="table-ads__name" data-name="Название">Диск сцепления МТЗ-1221 опорный БЗТДиА</td>
+                    <td class="table-ads__status" data-name="Статус">На модерации</td>
+                    <td class="table-ads__price" data-name="Цена">105 294 ₽</td>
+                    <td class="table-ads__availability" data-name="Наличие">Склад: Вся Россия</td>
+                    <td class="table-ads__changes" data-name="Изменено">26 марта 2024, 20:00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>

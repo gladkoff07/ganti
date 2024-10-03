@@ -126,7 +126,7 @@
         <div class="main__box-wrapper">
           <div class="main__aside">
             <aside class="aside-category">
-              <div class="aside-category__box aside-category__box--mobile">
+              <div class="aside-category__box aside-category__box--mobile js-aside-category-toggle-view">
                 <div class="aside-category__box-row">
                   <div class="aside-category__box-name">Фильтр</div>
                   <div class="aside-category__box-icon">
@@ -136,163 +136,165 @@
                   </div>
                 </div>
               </div>
-              <div class="aside-category__box">
-                <div class="aside-category__box-name">Категории</div>
-                <div class="aside-category__box-body">
-                  <div class="block-category-sub">
-                    <div class="block-category-sub__name">Головки блока цилиндров</div>
-                    <div class="block-category-sub__list">
-                      <ul class="list-sub-category">
-                        <li class="list-sub-category__item"><a class="list-sub-category__link list-sub-category__link--active" href="#">Клапаны впускные и выпускные</a></li>
-                        <li class="list-sub-category__item"><a class="list-sub-category__link" href="#">Колпачки маслосъемные</a></li>
-                        <li class="list-sub-category__item"><a class="list-sub-category__link" href="#">Пружины, тарелки, сухари</a></li>
-                      </ul>
+              <div class="aside-category__inner">
+                <div class="aside-category__box">
+                  <div class="aside-category__box-name">Категории</div>
+                  <div class="aside-category__box-body">
+                    <div class="block-category-sub">
+                      <div class="block-category-sub__name">Головки блока цилиндров</div>
+                      <div class="block-category-sub__list">
+                        <ul class="list-sub-category">
+                          <li class="list-sub-category__item"><a class="list-sub-category__link list-sub-category__link--active" href="#">Клапаны впускные и выпускные</a></li>
+                          <li class="list-sub-category__item"><a class="list-sub-category__link" href="#">Колпачки маслосъемные</a></li>
+                          <li class="list-sub-category__item"><a class="list-sub-category__link" href="#">Пружины, тарелки, сухари</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="aside-category__box">
+                  <div class="aside-category__box-name">Цена, ₽</div>
+                  <div class="aside-category__box-body">
+                    <div class="category-price-choice"><span class="category-price-choice__text">от</span>
+                      <input class="category-price-choice__input" type="text" placeholder="19"><span class="category-price-choice__text">до</span>
+                      <input class="category-price-choice__input" type="text" placeholder="10954">
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-category__box">
+                  <div class="aside-category__box-name">Подлинность</div>
+                  <div class="aside-category__box-body">
+                    <div class="list-characteristics">
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">Original</span><span class="list-characteristics__value">(6)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">AFM</span><span class="list-characteristics__value">(10)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-category__box">
+                  <div class="aside-category__box-name">Бренд</div>
+                  <div class="aside-category__box-body">
+                    <div class="list-characteristics">
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">Buhler</span><span class="list-characteristics__value">(3)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">John Deere</span><span class="list-characteristics__value">(10)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">Lemken</span><span class="list-characteristics__value">(6)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">Krone</span><span class="list-characteristics__value">(9)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="aside-category__box">
+                  <div class="aside-category__box-name">Серия двигателя</div>
+                  <div class="aside-category__box-body">
+                    <div class="list-characteristics">
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">ISM</span><span class="list-characteristics__value">(7)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">QSM</span><span class="list-characteristics__value">(8)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">M11</span><span class="list-characteristics__value">(8)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">ISF 3.8</span><span class="list-characteristics__value">(1)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">QSB</span><span class="list-characteristics__value">(2)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">С 8.3</span><span class="list-characteristics__value">(1)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">6CT</span><span class="list-characteristics__value">(1)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">ISDe</span><span class="list-characteristics__value">(1)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">X</span><span class="list-characteristics__value">(1)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                      <div class="list-characteristics__item">
+                        <div class="list-characteristics__data"><span class="list-characteristics__name">QSX</span><span class="list-characteristics__value">(1)</span></div>
+                        <div class="list-characteristics__actions">
+                          <input class="list-characteristics__checkbox" type="checkbox"/>
+                          <div class="list-characteristics__actions-block"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><a class="link-button link-button--color-orange link-button--full" href="#">Применить фильтр</a>
               </div>
-              <div class="aside-category__box">
-                <div class="aside-category__box-name">Цена, ₽</div>
-                <div class="aside-category__box-body">
-                  <div class="category-price-choice"><span class="category-price-choice__text">от</span>
-                    <input class="category-price-choice__input" type="text" placeholder="19"><span class="category-price-choice__text">до</span>
-                    <input class="category-price-choice__input" type="text" placeholder="10954">
-                  </div>
-                </div>
-              </div>
-              <div class="aside-category__box">
-                <div class="aside-category__box-name">Подлинность</div>
-                <div class="aside-category__box-body">
-                  <div class="list-characteristics">
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">Original</span><span class="list-characteristics__value">(6)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">AFM</span><span class="list-characteristics__value">(10)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="aside-category__box">
-                <div class="aside-category__box-name">Бренд</div>
-                <div class="aside-category__box-body">
-                  <div class="list-characteristics">
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">Buhler</span><span class="list-characteristics__value">(3)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">John Deere</span><span class="list-characteristics__value">(10)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">Lemken</span><span class="list-characteristics__value">(6)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">Krone</span><span class="list-characteristics__value">(9)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="aside-category__box">
-                <div class="aside-category__box-name">Серия двигателя</div>
-                <div class="aside-category__box-body">
-                  <div class="list-characteristics">
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">ISM</span><span class="list-characteristics__value">(7)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">QSM</span><span class="list-characteristics__value">(8)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">M11</span><span class="list-characteristics__value">(8)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">ISF 3.8</span><span class="list-characteristics__value">(1)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">QSB</span><span class="list-characteristics__value">(2)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">С 8.3</span><span class="list-characteristics__value">(1)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">6CT</span><span class="list-characteristics__value">(1)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">ISDe</span><span class="list-characteristics__value">(1)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">X</span><span class="list-characteristics__value">(1)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                    <div class="list-characteristics__item">
-                      <div class="list-characteristics__data"><span class="list-characteristics__name">QSX</span><span class="list-characteristics__value">(1)</span></div>
-                      <div class="list-characteristics__actions">
-                        <input class="list-characteristics__checkbox" type="checkbox"/>
-                        <div class="list-characteristics__actions-block"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div><a class="link-button link-button--color-orange link-button--full" href="#">Применить фильтр</a>
             </aside>
           </div>
           <div class="main-category main__body">

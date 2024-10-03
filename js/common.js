@@ -1,7 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
-  var _document$querySelect, _document$querySelect10;
+  var _document$querySelect, _document$querySelect10, _document$querySelect11;
   // js-faq-change
   document.querySelectorAll('.js-faq-change').forEach(function (item) {
     item.addEventListener('click', function () {
@@ -137,5 +137,11 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
     this.classList.toggle('list-sorting__head--active');
     this.nextElementSibling.classList.toggle('list-sorting__body--active');
+  });
+
+  // js-aside-category-toggle-view
+  (_document$querySelect11 = document.querySelector('.js-aside-category-toggle-view')) === null || _document$querySelect11 === void 0 || _document$querySelect11.addEventListener('click', function () {
+    this.classList.toggle('aside-category__box--active');
+    this.nextElementSibling.classList.toggle('aside-category__inner--active');
   });
 });

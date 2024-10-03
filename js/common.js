@@ -1,7 +1,7 @@
 "use strict";
 
 document.addEventListener('DOMContentLoaded', function () {
-  var _document$querySelect;
+  var _document$querySelect, _document$querySelect10;
   // js-faq-change
   document.querySelectorAll('.js-faq-change').forEach(function (item) {
     item.addEventListener('click', function () {
@@ -131,4 +131,11 @@ document.addEventListener('DOMContentLoaded', function () {
   // buttonMenuClose.addEventListener("click", () => {
   //   closeMenu();
   // });
+
+  // js-change-list-sorting
+  (_document$querySelect10 = document.querySelector('.js-change-list-sorting')) === null || _document$querySelect10 === void 0 || _document$querySelect10.addEventListener('click', function (e) {
+    e.preventDefault();
+    this.classList.toggle('list-sorting__head--active');
+    this.nextElementSibling.classList.toggle('list-sorting__body--active');
+  });
 });

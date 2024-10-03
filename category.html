@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Категория</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/main.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <!-- menu mobile-->
+    <div class="menu-mobile">
+      <div class="menu-mobile__body"></div>
+    </div>
+    <!-- header-->
+    <header class="header section">
+      <div class="header__top">
+        <div class="container row row--between row--align-center">
+          <!-- select region-->
+          <div class="region header__region">
+            <div class="region__text">Ваш регион:</div><a class="region__change" href="#modal-region" data-fancybox="data-fancybox"> <span class="region__change-name">Санкт-Петербург</span><span class="region__change-icon">
+                <svg class="icon icon-arrow-change-city">
+                  <use xlink:href="svg/symbols.svg#icon-arrow-change-city"></use>
+                </svg></span></a>
+          </div>
+          <!-- menu-->
+          <ul class="header-menu header__menu">
+            <li class="header-menu__item"><a class="header-menu__link" href="#">О сервисе</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Вопрос-ответ</a></li>
+            <li class="header-menu__item"><a class="header-menu__link" href="#">Поддержка</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container row row--align-center">
+          <!-- logo-->
+          <div class="logo header__logo"><span class="logo__img"><img src="img/img-logo.svg" alt=""/></span><span class="logo__text">Запчасти для сельскохозяйственной и строительной техники</span></div>
+          <!-- catalog button-->
+          <div class="header__link-catalog"><a class="link-button link-button--icon link-button--color-orange js-change-list-catalog-nav" href="#"><span class="link-button__text">Каталог</span><span class="link-button__icon">
+                <svg class="icon icon-arrow-button-catalog">
+                  <use xlink:href="svg/symbols.svg#icon-arrow-button-catalog"></use>
+                </svg></span></a>
+            <div class="header__link-catalog-box">
+              <ul class="list-catalog-nav">
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Вкладыши</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Головки блока цилиндров</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">ГРМ</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Крепеж</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Насосы</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Прокладки, сальники, уплотнения</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Распределительные валы</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Ремни, ролики, натяжители</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Система охлаждения</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Топливное оборудование</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Ходовая часть</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Цилиндро-поршневая группа</a></li>
+                <li class="list-catalog-nav__item"><a class="list-catalog-nav__link" href="#">Электрические компоненты</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- search-->
+          <div class="header__search">
+            <form class="form-search" action="#">
+              <input class="form-search__input" type="search" name="search" placeholder="Поиск по товару или категории"/>
+              <input class="form-search__submit" type="submit" value=""/>
+            </form>
+          </div>
+          <!-- link supplier--><a class="link-button link-button--color-blue header__link-supplier" href="#">Стать поставщиком</a>
+          <!-- link actions-->
+          <div class="header-actions header__actions">
+            <!-- favorite--><a class="header-actions__item" href="#"><span class="header-actions__item-icon">
+                <svg class="icon icon-favorite">
+                  <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                </svg></span><span class="header-actions__item-value">4</span></a>
+            <!-- basket--><a class="header-actions__item" href="#"><span class="header-actions__item-icon">
+                <svg class="icon icon-basket">
+                  <use xlink:href="svg/symbols.svg#icon-basket"></use>
+                </svg></span><span class="header-actions__item-value">2</span></a>
+            <!-- authorization-->
+            <div class="link-authorization header-actions__item js-change-authorization-nav"><span class="header-actions__item-icon">
+                <svg class="icon icon-authorization">
+                  <use xlink:href="svg/symbols.svg#icon-authorization"></use>
+                </svg></span>
+              <div class="link-authorization__box">
+                <ul class="user-navigation">
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Мои объявления</a></li>
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Профиль</a></li>
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Финансы</a></li>
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Смена пароля</a></li>
+                  <li class="user-navigation__item"><a class="user-navigation__link" href="#">Уведомления</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- mobile button-->
+          <div class="mobile-button header__mobile-button js-mobile-button">
+            <svg class="icon icon-menu-mobile">
+              <use xlink:href="svg/symbols.svg#icon-menu-mobile"></use>
+            </svg>
+          </div>
+          <!-- mobile search-->
+          <div class="mobile-search header__mobile-search js-mobile-search"></div>
+        </div>
+      </div>
+    </header>
+    <!-- main-->
+    <main class="main section">
+      <div class="container">
+        <!-- breadcrumbs-->
+        <ul class="breadcrumbs main__breadcrumbs">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a>
+          </li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Головки блока цилиндров</a>
+          </li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__current">Клапаны впускные и выпускные</span>
+          </li>
+        </ul>
+        <!-- header -->
+        <h1 class="page-header main__page-header">Клапаны впускные и выпускные</h1>
+        <!-- body-->
+        <div class="main__box-wrapper">
+          <div class="main__aside">
+            <aside class="aside-category">
+              <div class="aside-category__box aside-category__box--mobile">
+                <div class="aside-category__box-row">
+                  <div class="aside-category__box-name">Фильтр</div>
+                  <div class="aside-category__box-icon">
+                    <svg class="icon icon-category-filter">
+                      <use xlink:href="svg/symbols.svg#icon-category-filter"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-category__box">
+                <div class="aside-category__box-name">Категории</div>
+                <div class="aside-category__box-body">
+                  <div class="block-category-sub">
+                    <div class="block-category-sub__name">Головки блока цилиндров</div>
+                    <div class="block-category-sub__list">
+                      <ul class="list-sub-category">
+                        <li class="list-sub-category__item"><a class="list-sub-category__link list-sub-category__link--active" href="#">Клапаны впускные и выпускные</a></li>
+                        <li class="list-sub-category__item"><a class="list-sub-category__link" href="#">Колпачки маслосъемные</a></li>
+                        <li class="list-sub-category__item"><a class="list-sub-category__link" href="#">Пружины, тарелки, сухари</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-category__box">
+                <div class="aside-category__box-name">Цена, ₽</div>
+                <div class="aside-category__box-body">
+                  <div class="category-price-choice"><span class="category-price-choice__text">от</span>
+                    <input class="category-price-choice__input" type="text" placeholder="19"><span class="category-price-choice__text">до</span>
+                    <input class="category-price-choice__input" type="text" placeholder="10954">
+                  </div>
+                </div>
+              </div>
+              <div class="aside-category__box">
+                <div class="aside-category__box-name">Подлинность</div>
+                <div class="aside-category__box-body">
+                  <div class="list-characteristics">
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">Original</span><span class="list-characteristics__value">(6)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">AFM</span><span class="list-characteristics__value">(10)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-category__box">
+                <div class="aside-category__box-name">Бренд</div>
+                <div class="aside-category__box-body">
+                  <div class="list-characteristics">
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">Buhler</span><span class="list-characteristics__value">(3)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">John Deere</span><span class="list-characteristics__value">(10)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">Lemken</span><span class="list-characteristics__value">(6)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">Krone</span><span class="list-characteristics__value">(9)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="aside-category__box">
+                <div class="aside-category__box-name">Серия двигателя</div>
+                <div class="aside-category__box-body">
+                  <div class="list-characteristics">
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">ISM</span><span class="list-characteristics__value">(7)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">QSM</span><span class="list-characteristics__value">(8)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">M11</span><span class="list-characteristics__value">(8)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">ISF 3.8</span><span class="list-characteristics__value">(1)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">QSB</span><span class="list-characteristics__value">(2)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">С 8.3</span><span class="list-characteristics__value">(1)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">6CT</span><span class="list-characteristics__value">(1)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">ISDe</span><span class="list-characteristics__value">(1)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">X</span><span class="list-characteristics__value">(1)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                    <div class="list-characteristics__item">
+                      <div class="list-characteristics__data"><span class="list-characteristics__name">QSX</span><span class="list-characteristics__value">(1)</span></div>
+                      <div class="list-characteristics__actions">
+                        <input class="list-characteristics__checkbox" type="checkbox"/>
+                        <div class="list-characteristics__actions-block"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><a class="link-button link-button--color-orange link-button--full" href="#">Применить фильтр</a>
+            </aside>
+          </div>
+          <div class="main-category main__body">
+            <div class="main-category__head">
+              <!-- filter-->
+              <div class="list-filter main-category__filter">
+                <div class="list-filter__item">Оригинал</div>
+                <div class="list-filter__item list-filter__item--active"><span class="list-filter__text">Дешевые</span><span class="list-filter__icon">
+                    <svg class="icon icon-filter-del">
+                      <use xlink:href="svg/symbols.svg#icon-filter-del"></use>
+                    </svg></span></div>
+                <div class="list-filter__item list-filter__item--active"><span class="list-filter__text">AFM</span><span class="list-filter__icon">
+                    <svg class="icon icon-filter-del">
+                      <use xlink:href="svg/symbols.svg#icon-filter-del"></use>
+                    </svg></span></div>
+                <div class="list-filter__item">Buhller</div>
+                <div class="list-filter__item">Lemker</div>
+                <div class="list-filter__item list-filter__item--active"><span class="list-filter__text">ISM</span><span class="list-filter__icon">
+                    <svg class="icon icon-filter-del">
+                      <use xlink:href="svg/symbols.svg#icon-filter-del"></use>
+                    </svg></span></div>
+                <div class="list-filter__item">M11</div>
+                <div class="list-filter__item">6CT</div>
+                <div class="list-filter__item">QSB</div>
+                <div class="list-filter__item">Krone</div>
+              </div>
+              <!-- sorting-->
+              <div class="sorting main-category__sorting">
+                <div class="sorting__icon">
+                  <svg class="icon icon-sorting">
+                    <use xlink:href="svg/symbols.svg#icon-sorting"></use>
+                  </svg>
+                </div>
+                <div class="list-sorting sorting__list">
+                  <div class="list-sorting__head js-change-list-sorting">
+                    <div class="list-sorting__item">По популярности</div>
+                    <div class="list-sorting__head-icon">
+                      <svg class="icon icon-arrow-change-sorting">
+                        <use xlink:href="svg/symbols.svg#icon-arrow-change-sorting"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="list-sorting__body"><a class="list-sorting__item" href="#">По возрастанию</a><a class="list-sorting__item" href="#">По убыванию</a><a class="list-sorting__item" href="#">По цене</a></div>
+                </div>
+              </div>
+            </div>
+            <!-- list-->
+            <div class="list-products list-products--category main-category__list">
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-1.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Защита катка 13926755</a>
+                  <div class="list-products__price">42 164 ₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-2.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Звено гусеничной цепи 14040533</a>
+                  <div class="list-products__price">7 166₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-3.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Вал вилок включения сцепления МТЗ-82, МАЗ-4370</a>
+                  <div class="list-products__price">508₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-4.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Вал МТЗ-1221 сцепления БЗТДиА</a>
+                  <div class="list-products__price">332 294₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-5.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Вилка сцепления МТЗ-1221 отводки ОАО МТЗ</a>
+                  <div class="list-products__price">6 494₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-6.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Гидроусилитель сцепления МТЗ-1222, 1523 (ан. 80-1602510)</a>
+                  <div class="list-products__price">8 947₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-7.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Диск сцепления МТЗ-1221 опорный БЗТДиА</a>
+                  <div class="list-products__price">24 373₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-8.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Корзина сцепления МТЗ-80 с/о до 94г. БЗТДиА</a>
+                  <div class="list-products__price">16 700₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-9.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Муфта сцепления -3110, -3302 дв.402,405,406 (FENOX)</a>
+                  <div class="list-products__price">1 357₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-10.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Рычаг корзины сцепления МТЗ н/о усиленный БЗТДиА</a>
+                  <div class="list-products__price">620₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-1.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Защита катка 13926755</a>
+                  <div class="list-products__price">42 164 ₽</div>
+                </div>
+              </div>
+              <div class="list-products__item">
+                <div class="list-products__frame">
+                  <div class="list-products__favorite"><span class="favorite-product__icon favorite-product__icon--active">
+                      <svg class="icon icon-favorite">
+                        <use xlink:href="svg/symbols.svg#icon-favorite"></use>
+                      </svg></span>
+                  </div><img src="img/img-slider-products-2.webp" alt=""/>
+                </div>
+                <div class="list-products__content">
+                  <div class="list-products__category">Cummins</div><a class="list-products__name" href="#">Звено гусеничной цепи 14040533</a>
+                  <div class="list-products__price">7 166₽</div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination-->
+            <ul class="pagination main__pagination">
+              <li class="pagination__item"><a class="pagination__link" href="#">«</a></li>
+              <li class="pagination__item"><a class="pagination__link pagination__link--active" href="#">1</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
+              <li class="pagination__item"><a class="pagination__link" href="#">»</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- wrapper-ask-question-->
+    <div class="wrapper-ask-question">
+      <div class="container">
+        <div class="ask-question">
+          <div class="ask-question__header">Остались вопросы?</div>
+          <div class="ask-question__appeal">Напишите нам и мы свяжемся с Вами в ближайшее время или позвоните по номеру +7 (495) 085-33-73</div><a class="link-button link-button--color-orange ask-question__button" href="#">Задать вопрос</a>
+        </div>
+      </div>
+    </div>
+    <!-- footer-->
+    <footer class="footer section">
+      <div class="container row">
+        <div class="footer__column footer__column--data">
+          <!-- logo-->
+          <div class="logo logo--footer footer__logo"><span class="logo__img"><img src="img/img-logo-footer.svg" alt=""/></span><span class="logo__text">Запчасти для сельскохозяйственной и строительной техники</span></div>
+          <!-- link supplier--><a class="link-button link-button--color-blue footer__link-supplier" href="#">Стать поставщиком</a>
+          <!-- address-->
+          <address class="address footer__address">
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-place">
+                  <use xlink:href="svg/symbols.svg#icon-address-place"></use>
+                </svg>
+              </div>
+              <div class="address__content">Москва, ул. Рябиновая, д. 32, этаж 1, пом. 2</div>
+            </div>
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-phone">
+                  <use xlink:href="svg/symbols.svg#icon-address-phone"></use>
+                </svg>
+              </div>
+              <div class="address__content">+7 (495) 085-33-73</div>
+            </div>
+            <div class="address__item">
+              <div class="address__icon">
+                <svg class="icon icon-address-email">
+                  <use xlink:href="svg/symbols.svg#icon-address-email"></use>
+                </svg>
+              </div>
+              <div class="address__content">info@ganti.ru</div>
+            </div>
+          </address>
+        </div>
+        <div class="footer__column footer__column--category">
+          <div class="footer__column-header">Категории</div>
+          <ul class="footer-menu footer-menu--column">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Вкладыши</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Головки блока цилиндров</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">ГРМ</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Крепеж</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Насосы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Прокладки, сальники, уплотнения</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Распределительные валы</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Ремни, ролики, натяжители</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Система охлаждения</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Топливное оборудование</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Ходовая часть</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Цилиндро-поршневая группа</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Электрические компоненты</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--service">
+          <div class="footer__column-header">Сервис</div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Личный кабинет</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Партнеры</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">О компании</a></li>
+          </ul>
+        </div>
+        <div class="footer__column footer__column--info">
+          <div class="footer__column-header">Информация</div>
+          <ul class="footer-menu">
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Доставка и оплата</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Реквизиты</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Связаться с админитсратором сайта</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+            <li class="footer-menu__item"><a class="footer-menu__link" href="#">Пользовательское соглашение</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- modal-region-->
+    <div class="modal modal--region" id="modal-region">
+      <div class="modal__header">Выберите ваш регион</div>
+      <div class="modal__body">
+        <ul class="list-regions">
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Вся Россия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Москва</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Санкт-Петербург</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Адыгея</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Алтай</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Алтайский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Амурская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Архангельская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Астраханская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Башкортостан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Белгородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Брянская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Бурятия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Владимирская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Волгоградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Вологодская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Воронежская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Дагестан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Еврейская AO</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Забайкальский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ивановская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Ингушетия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Иркутская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кабардино-Балкарская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Калининградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Калмыкия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Калужская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Камчатский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Карачаево-Черкесская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Карелия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кемеровская обл - Кузбасс</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Кировская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Коми</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Костромская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Краснодарский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Красноярский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Крым</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Курганская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Курская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ленинградская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Липецкая обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Магаданская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Марий Эл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Мордовия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Московская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Мурманская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ненецкий АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Нижегородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Новгородская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Новосибирская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Омская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Оренбургская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Орловская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Пензенская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Пермский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Приморский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Псковская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ростовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Рязанская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Самарская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Саратовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Саха /Якутия/</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Сахалинская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Свердловская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">г Севастополь</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Северная Осетия - Алания</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Смоленская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ставропольский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тамбовская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Татарстан</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тверская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Томская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тульская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Тыва</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Тюменская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Удмуртская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ульяновская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Хабаровский край</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">респ Хакасия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ханты-Мансийский AO - Югра</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Челябинская обл</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чеченская респ</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чувашская респ - Чувашия</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Чукотский АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ямало-Ненецкий АО</a></li>
+          <li class="list-regions__item"><a class="list-regions__name" href="#">Ярославская обл</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- scripts-->
+    <script src="js/vendor.js" defer></script>
+    <script src="js/common.js" defer></script>
+  </body>
+</html>

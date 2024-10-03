@@ -20,6 +20,10 @@
 			<path d="M1 .5l2 2 2-2" stroke="#2F3239" stroke-linecap="round"></path>
 		</symbol>
 	
+		<symbol id="icon-arrow-change-sorting" viewBox="0 0 10 7">
+			<path d="M1 1.5l4 4 4-4" stroke="#2F3239" stroke-width="1.5" stroke-linecap="round"></path>
+		</symbol>
+	
 		<symbol id="icon-authorization" viewBox="0 0 30 31">
 			<path d="M14.927 29.354c7.692 0 13.927-6.235 13.927-13.927C28.854 7.735 22.62 1.5 14.927 1.5 7.235 1.5 1 7.735 1 15.427c0 7.692 6.235 13.927 13.927 13.927z"></path><path d="M14.928 19.073a5.549 5.549 0 1 0 0-11.098 5.549 5.549 0 0 0 0 11.098z"></path><path d="M6.5 26.512c.52-4.19 4.096-7.44 8.426-7.44s7.907 3.25 8.426 7.44"></path>
 		</symbol>
@@ -60,6 +64,10 @@
 			<g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="M2 6.5v.293c0 1.429.486 2.815 1.379 3.93L8 16.5l4.621-5.776A6.292 6.292 0 0 0 14 6.793V6.5a6 6 0 0 0-12 0zm6 2a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#8D95AA"></path></g><defs><clipPath id="a"><path fill="#fff" transform="translate(0 .5)" d="M0 0h16v16H0z"></path></clipPath></defs>
 		</symbol>
 	
+		<symbol id="icon-category-filter" viewBox="0 0 24 25">
+			<circle cx="18" cy="9" r="4.5"></circle><path d="M18 4V1M18 24V14"></path><circle cx="6" cy="16" r="4.5"></circle><path d="M6 11V1M6 24v-3"></path>
+		</symbol>
+	
 		<symbol id="icon-close-notification" viewBox="0 0 22 22">
 			<path d="M1 1l20 20M21 1L1 21"></path>
 		</symbol>
@@ -94,6 +102,10 @@
 	
 		<symbol id="icon-slider-prev" viewBox="0 0 13 22">
 			<path d="M12 1L2 11l10 10"></path>
+		</symbol>
+	
+		<symbol id="icon-sorting" viewBox="0 0 14 15">
+			<path d="M13 1.5v12M1 8.232V13.5m5.74-8.78v8.78"></path>
 		</symbol>
 	
 </svg>

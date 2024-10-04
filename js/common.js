@@ -62,12 +62,12 @@ document.addEventListener('DOMContentLoaded', function () {
       // Проверить, что media query будет true
       if (e.matches) {
         var _document$querySelect2;
-        var basketInfo = (_document$querySelect2 = document.querySelector(".block-basket__content")) === null || _document$querySelect2 === void 0 ? void 0 : _document$querySelect2.querySelector('.basket-info');
+        var basketInfo = ((_document$querySelect2 = document.querySelector(".block-basket__content")) === null || _document$querySelect2 === void 0 ? void 0 : _document$querySelect2.querySelector('.servise-info')) || '';
         var basketAside = document.querySelector(".block-basket__aside");
         basketAside === null || basketAside === void 0 || basketAside.after(basketInfo);
       } else {
         var _document$querySelect3, _document$querySelect4;
-        var _basketInfo = (_document$querySelect3 = document.querySelector(".block-basket")) === null || _document$querySelect3 === void 0 ? void 0 : _document$querySelect3.querySelector('.basket-info');
+        var _basketInfo = ((_document$querySelect3 = document.querySelector(".block-basket")) === null || _document$querySelect3 === void 0 ? void 0 : _document$querySelect3.querySelector('.servise-info')) || '';
         var basketList = (_document$querySelect4 = document.querySelector(".block-basket__content")) === null || _document$querySelect4 === void 0 ? void 0 : _document$querySelect4.querySelector('.basket-list');
         basketList === null || basketList === void 0 || basketList.after(_basketInfo);
       }

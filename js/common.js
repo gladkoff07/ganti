@@ -145,4 +145,37 @@ document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('#rating').setAttribute('value', this.getAttribute('title'));
     });
   });
+
+  // calc
+  document.querySelectorAll(".js-calc-minus").forEach(function (item) {
+    item.addEventListener("click", function () {
+      var $input = this.nextElementSibling;
+      var count = parseInt($input.value) - 1;
+      count = count < 1 ? 1 : count;
+      if (count === 1) {
+        this.classList.add("calc__item--disabled");
+      } else {
+        this.classList.remove("calc__item--disabled");
+      }
+      $input.value = count;
+      $input.dispatchEvent(new Event("change", {
+        bubbles: true
+      }));
+      return false;
+    });
+  });
+  document.querySelectorAll(".js-calc-plus").forEach(function (item) {
+    item.addEventListener("click", function () {
+      var $input = this.previousElementSibling;
+      var count = parseInt($input.value) + 1;
+      if (count > 1) {
+        this.previousElementSibling.previousElementSibling.classList.remove("calc__item--disabled");
+      }
+      $input.value = count;
+      $input.dispatchEvent(new Event("change", {
+        bubbles: true
+      }));
+      return false;
+    });
+  });
 });

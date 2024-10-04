@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // modal review star
   document.querySelectorAll('.form-rating__item').forEach(function (item) {
     item.addEventListener('click', function () {
-      this.closest('.form-rating').querySelectorAll('form-rating__item').forEach(function (item) {
+      this.closest('.form-rating').querySelectorAll('.form-rating__item').forEach(function (item) {
         return item.classList.remove('form-rating__item--active');
       });
       this.classList.add('form-rating__item--active');

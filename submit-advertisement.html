@@ -21,7 +21,7 @@
         <div class="container row row--between row--align-center">
           <!-- select region-->
           <div class="region header__region">
-            <div class="region__text">Ваш регион:</div><a class="region__change" href="#modal-region" data-fancybox="data-fancybox"> <span class="region__change-name">Санкт-Петербург</span><span class="region__change-icon">
+            <div class="region__text">Ваш регион:</div><a class="region__change" href="#modal-region" data-fancybox="region"><span class="region__change-name">Санкт-Петербург</span><span class="region__change-icon">
                 <svg class="icon icon-arrow-change-city">
                   <use xlink:href="svg/symbols.svg#icon-arrow-change-city"></use>
                 </svg></span></a>
@@ -321,6 +321,35 @@
           <li class="list-regions__item"><a class="list-regions__name" href="#">Ярославская обл</a></li>
         </ul>
       </div>
+    </div>
+    <!-- modal-basket-->
+    <div class="modal modal--basket" id="modal-basket">
+      <div class="modal__header">Товар добавлен в корзину</div>
+      <div class="modal__body">
+        <div class="basket-list">
+          <div class="basket-list__item">
+            <div class="basket-list__img"><img src="img/img-basket-1.webp" alt=""/></div>
+            <div class="basket-list__data"><a class="basket-list__name" href="#">Вал привода Т/Н CUM 11 3041043</a>
+              <div class="basket-list__address"><span class="basket-list__address-icon">
+                  <svg class="icon icon-basket-place">
+                    <use xlink:href="svg/symbols.svg#icon-basket-place"></use>
+                  </svg></span><span class="basket-list__address-value">Россия, Москва, ул. Рябиновая, дом 32</span></div>
+            </div>
+            <div class="basket-list__price">40 698 ₽</div>
+            <div class="calc basket-list__calc">
+              <div class="calc__item">-</div>
+              <input class="calc__value" type="text" value="0"/>
+              <div class="calc__item">+</div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__actions"><a class="link-button link-button--color-blue" href="#">Продолжить покупки</a><a class="link-button link-button--color-orange" href="#">Оформить заказ</a></div>
+      </div>
+    </div>
+    <!-- modal-review-->
+    <div class="modal modal--review" id="modal-review">
+      <div class="modal__header">Добавить отзыв</div>
+      <div class="modal__body"></div>
     </div>
     <!-- scripts-->
     <script src="js/vendor.js" defer></script>

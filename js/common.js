@@ -118,19 +118,9 @@ document.addEventListener('DOMContentLoaded', function () {
     blockMenu.classList.toggle("menu-mobile--active");
     blockBody.classList.toggle('body-overflow');
   };
-
-  // const closeMenu = () => {
-  //   blockMenu.classList.remove("menu-mobile--active");
-  //   blockBody.classList.remove('body-overflow');
-  // };
-
   buttonMenu.addEventListener("click", function () {
     openMenu();
   });
-
-  // buttonMenuClose.addEventListener("click", () => {
-  //   closeMenu();
-  // });
 
   // js-change-list-sorting
   (_document$querySelect10 = document.querySelector('.js-change-list-sorting')) === null || _document$querySelect10 === void 0 || _document$querySelect10.addEventListener('click', function (e) {
@@ -143,5 +133,16 @@ document.addEventListener('DOMContentLoaded', function () {
   (_document$querySelect11 = document.querySelector('.js-aside-category-toggle-view')) === null || _document$querySelect11 === void 0 || _document$querySelect11.addEventListener('click', function () {
     this.classList.toggle('aside-category__box--active');
     this.nextElementSibling.classList.toggle('aside-category__inner--active');
+  });
+
+  // modal review star
+  document.querySelectorAll('.form-rating__item').forEach(function (item) {
+    item.addEventListener('click', function () {
+      this.closest('.form-rating').querySelectorAll('form-rating__item').forEach(function (item) {
+        return item.classList.remove('form-rating__item--active');
+      });
+      this.classList.add('form-rating__item--active');
+      document.querySelector('#rating').setAttribute('value', this.getAttribute('title'));
+    });
   });
 });

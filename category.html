@@ -719,7 +719,39 @@
     <!-- modal-review-->
     <div class="modal modal--review" id="modal-review">
       <div class="modal__header">Добавить отзыв</div>
-      <div class="modal__body"></div>
+      <div class="modal__body">
+        <form class="form form--reviews" action="#">
+          <div class="form__row">
+            <div class="form-rating"><span class="form-rating__item form-rating__item--empty" title="5">
+                <svg class="icon icon-rating-reviews">
+                  <use xlink:href="svg/symbols.svg#icon-rating-reviews"></use>
+                </svg></span><span class="form-rating__item form-rating__item--empty" title="4">
+                <svg class="icon icon-rating-reviews">
+                  <use xlink:href="svg/symbols.svg#icon-rating-reviews"></use>
+                </svg></span><span class="form-rating__item form-rating__item--empty" title="3">
+                <svg class="icon icon-rating-reviews">
+                  <use xlink:href="svg/symbols.svg#icon-rating-reviews"></use>
+                </svg></span><span class="form-rating__item form-rating__item--empty" title="2">
+                <svg class="icon icon-rating-reviews">
+                  <use xlink:href="svg/symbols.svg#icon-rating-reviews"></use>
+                </svg></span><span class="form-rating__item form-rating__item--empty" title="1">
+                <svg class="icon icon-rating-reviews">
+                  <use xlink:href="svg/symbols.svg#icon-rating-reviews"></use>
+                </svg></span></div>
+            <input class="required" type="hidden" id="rating"/>
+          </div>
+          <div class="form__row form__row--between">
+            <input class="form__input form__input--50" type="text" name="fio" placeholder="ФИО"/>
+            <input class="form__input form__input--50" type="text" name="email" placeholder="E-mail"/>
+          </div>
+          <div class="form__row">
+            <textarea class="form__textarea" name="review" placeholder="Текст отзыва"></textarea>
+          </div>
+          <div class="form__action">
+            <input class="form__submit" type="submit" value="Сохранить"/>
+          </div>
+        </form>
+      </div>
     </div>
     <!-- scripts-->
     <script src="js/vendor.js" defer></script>
